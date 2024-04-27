@@ -40,13 +40,13 @@
       "comments": {},
       "textMateRules": [
         {
-          "scope": ["punctuation.definition.tag"]，
+          "scope": ["punctuation.definition.tag"],
           "settings": {
             "foreground": "#878580"
           }
         },
         {
-          "scope": ["mate.tag"]，
+          "scope": ["mate.tag"],
           "settings": {
             "foreground": "#878580"
           }
@@ -58,13 +58,13 @@
       "textMateRules": [
         //示例
         {
-          "scope": ["punctuation.definition.tag"]，
+          "scope": ["punctuation.definition.tag"],
           "settings": {
             "foreground": "#4d5358"
           }
         },
         {
-          "scope": ["mate.tag"]，
+          "scope": ["mate.tag"],
           "settings": {
             "foreground": "#4d5358"
           }
@@ -73,10 +73,10 @@
     }
   },
   "explorer.compactFolders": false,
-  "editor.renderLineHighlight": "gutter"， //行选择样式
-  "workbench.iconTheme": "symbols"， //文件图标
-  "editor.fontSize": 15.2， //字大小
-  "editor.fontFamily": "Victor Mono Semibold, MiSans", //字体
+  "editor.renderLineHighlight": "gutter", //行选择样式
+  "workbench.iconTheme": "symbols", //文件图标
+  "editor.fontSize": 15.2, //字大小
+  "editor.fontFamily": "VictorMono NFM Semibold, MiSans", //字体
   //"editor.fontFamily": "Iosevka Medium, VictorMono NFM Medium,Iosevka Slab, Iosevka Curly, Monaspace neon, MiSans", //字体
   "editor.letterSpacing": 0.2,
   "editor.fontLigatures": true, //连字符
@@ -227,5 +227,7 @@
   "animations.Install-Method": "Apc Customize UI++",
   "apc.imports": [
     "file:///c:/Users/huzhengwei/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
-  ]
+  ],
+  "window.menuBarVisibility": "compact",
+  "workbench.statusBar.visible": false
 }
