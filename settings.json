@@ -72,16 +72,19 @@
       ]
     }
   },
-  "explorer.compactFolders": false,
+  "explorer.compactFolders": false, //不允许左侧文件结构折叠
+  // "editor.semanticHighlighting.enabled": false,
   "editor.renderLineHighlight": "gutter", //行选择样式
   "workbench.iconTheme": "symbols", //文件图标
-  "editor.fontSize": 15.2, //字大小
-  "editor.fontFamily": "VictorMono NFM Semibold, MiSans", //字体
-  //"editor.fontFamily": "Iosevka Medium, VictorMono NFM Medium,Iosevka Slab, Iosevka Curly, Monaspace neon, MiSans", //字体
-  "editor.letterSpacing": 0.2,
+  "editor.fontSize": 15.6, //字大小15.2
+  "editor.fontFamily": "BlexMono Nerd Font, MiSans", //字体
+  //"editor.fontFamily": "Iosevka Medium, CaskaydiaMono NF,iMWritingMono Nerd Font，VictorMono NFM Medium,Victor Mono Semibold,Iosevka Slab, Iosevka Curly, Monaspace neon, MiSans", //字体
+  "editor.letterSpacing": -0.04,
   "editor.fontLigatures": true, //连字符
-  "editor.lineHeight": 1.8, //行高
+  "editor.lineHeight": 1.9, //行高
   "editor.tabSize": 2,
+  "workbench.editor.labelFormat": "short", //选项卡启用短路径
+  "editor.scrollbar.vertical": "hidden", //隐藏右侧上下滚动条
   "editor.minimap.autohide": true, //minimap自动隐藏
   "editor.minimap.renderCharacters": false, //minimap色块
   "editor.lineNumbers": "relative", //隐藏右上角布局按钮
@@ -110,7 +113,14 @@
   "extensions.ignoreRecommendations": false,
   "files.exclude": {
     //排除搜索
-    "**/node_modules": true
+    "**/node_modules": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/.hg": true,
+    "**/.svn": true,
+    "**/.git": true,
+    ".idea": true,
+    ".vscode": true
   },
 
   //Prettier
@@ -223,11 +233,29 @@
     "ja": true
   },
   "git.autofetch": true,
-  "workbench.colorTheme": "One Hunter Flexoki Dark",
-  "animations.Install-Method": "Apc Customize UI++",
-  "apc.imports": [
+  "workbench.colorTheme": "Ocean Green: Dark",
+  "workbench.statusBar.visible": false,
+  //githubs上的配置
+  "apc.font.family": "Inter",
+  "apc.header": {
+    "height": 35
+  },
+  "apc.listRow": {
+    "height": 28
+  },
+  "apc.stylesheet": {
+    ".title-label > h2": "display: none",
+    // ".title-actions": "display: none",
+    ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: start",
+    ".sidebar>.title": "border-bottom: 1px solid #192A2C !important",
+    ".editor-actions": "display: none", //左右分栏
+    // ".composite-bar-container": "border-top: 1px solid #192A2C",
+    ".pane-body": "padding: 8px",
+    ".monaco-workbench .codicon[class*=codicon-]": "font-size: 16px",
+    ".codicon": "font-size: 16px" //sidebar icon size
+  },
+  "workbench.activityBar.location": "bottom",
+  "vscode_custom_css.imports": [
     "file:///c:/Users/huzhengwei/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.2/dist/updateHandler.js"
-  ],
-  "window.menuBarVisibility": "compact",
-  "workbench.statusBar.visible": false
+  ]
 }
