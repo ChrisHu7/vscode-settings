@@ -162,65 +162,7 @@
   "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
   "prettier.tslintIntegration": false, // 不让prettier使用tslint的代码格式进行校验
 
-  //Git
-  //Vim
-  "vim.foldfix": true,
-  "vim.highlightedyank.color": "rgba(230, 97, 89, 0.7)",
-  "vim.highlightedyank.enable": true,
-  "vim.highlightedyank.textColor": "white",
-  "vim.hlsearch": true,
-  "vim.leader": "<space>",
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": ["leader", "r"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["leader", "w"],
-      "commands": [":w!"]
-    },
-    {
-      "before": ["leader", "q"],
-      "commands": [":q!"]
-    },
-    {
-      "before": ["leader", "x"],
-      "commands": [":x!"]
-    },
-    {
-      "after": ["g", "g", "V", "G"],
-      "before": ["<c-a>"]
-    },
-    {
-      "before": ["<leader>", "k"],
-      "commands": ["editor.action.showHover"]
-    },
-    {
-      "before": ["[", "d"],
-      "commands": ["editor.action.marker.prev"]
-    },
-    {
-      "before": ["]", "d"],
-      "commands": ["editor.action.marker.next"]
-    },
-    {
-      "before": ["<leader>", "c", "a"],
-      "commands": ["editor.action.quickFix"]
-    },
-    {
-      "after": ["^"],
-      "before": ["H"]
-    },
-    {
-      "after": ["$"],
-      "before": ["L"]
-    },
-    {
-      "before": ["leader", "i"],
-      "commands": ["extension.toggleBool"]
-    }
-  ],
-  "vim.useSystemClipboard": true,
+  
   "oxc-client.enable": true,
   "window.zoomLevel": 0.4,
   "oxc_language_server.enable": false,
