@@ -76,10 +76,10 @@
   // "editor.semanticHighlighting.enabled": false,
   "editor.renderLineHighlight": "gutter", //行选择样式
   "workbench.iconTheme": "symbols", //文件图标
-  "editor.fontSize": 15.6, //字大小15.2
-  "editor.fontFamily": "BlexMono Nerd Font, MiSans", //字体
-  //"editor.fontFamily": "Iosevka Medium, CaskaydiaMono NF,iMWritingMono Nerd Font，VictorMono NFM Medium,Victor Mono Semibold,Iosevka Slab, Iosevka Curly, Monaspace neon, MiSans", //字体
-  "editor.letterSpacing": -0.04,
+  "editor.fontSize": 17, //字大小15.2
+  "editor.fontFamily": " DM Mono, BlexMono Nerd Font,  Iosevka, MiSans", //字体
+  //"editor.fontFamily": "Iosevka Medium, CaskaydiaMono NF,iMWritingMono Nerd Font,maple Mono SC NF,VictorMono NFM Medium,Victor Mono Semibold,Iosevka Slab, Iosevka Curly, Monaspace neon, MiSans", //字体
+  "editor.letterSpacing": -0.4,
   "editor.fontLigatures": true, //连字符
   "editor.lineHeight": 1.9, //行高
   "editor.tabSize": 2,
@@ -233,7 +233,7 @@
     "ja": true
   },
   "git.autofetch": true,
-  "workbench.colorTheme": "Ocean Green: Dark",
+  "workbench.colorTheme": "CodeSandbox",
   "workbench.statusBar.visible": false,
   //githubs上的配置
   "apc.font.family": "Inter",
@@ -252,7 +252,98 @@
     // ".composite-bar-container": "border-top: 1px solid #192A2C",
     ".pane-body": "padding: 8px",
     ".monaco-workbench .codicon[class*=codicon-]": "font-size: 16px",
-    ".codicon": "font-size: 16px" //sidebar icon size
+    ".codicon": "font-size: 16px", //sidebar icon size
+    ".quick-input-widget": {
+      "top": "140px !important",
+      "overflow": "hidden !important",
+      "padding": "1px",
+      "border": "1px solid rgba(255,255,255,.2) !important",
+      "box-shadow": "0 0 0 1px rgba(0,0,0,1) !important",
+      "backdrop-filter": "blur(10px) !important",
+      "background": "rgba(0,0,0,.3) !important",
+      "border-radius": "8px !important"
+    },
+    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label .monaco-icon-label-container>.monaco-icon-name-container": {
+      "display": "inline-flex"
+    },
+    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label::before": {
+      "border": "1px solid rgba(255,255,255,.15)",
+      "background-color": "rgba(0,0,0,.2)",
+      "background-size": "70%",
+      "border-radius": "3px",
+      "margin-right": "8px",
+      "padding": "0",
+      "width": "24px",
+      "display": "flex",
+      "background-position": "center"
+    },
+    ".quick-input-header .monaco-inputbox": {
+      "background": "none !important",
+      "border": "none !important"
+    },
+    ".quick-input-header": {
+      "padding": "0 !important",
+      "background": "none !important",
+      "border-bottom": "1px solid rgba(255,255,255,.2) !important",
+      "backdrop-filter": "blur(10px) !important",
+      "border-radius": "8px 8px 0 0 !important"
+    },
+    ".quick-input-and-message .input": {
+      "background": "hsl(240deg 1.33% 14.71% / .5) !important",
+      "backdrop-filter": "blur(8px) !important",
+      "border": "none !important",
+      "border-radius": "8px 8px 0 0 !important",
+      "padding": "0 12px !important",
+      "height": "40px !important",
+      "font-size": "14px !important",
+      "color": "var(--vscode-quickInput-foreground) !important"
+    },
+    ".quick-input-header input:focus": {
+      "outline": "none !important"
+    },
+    ".quick-input-header .synthetic-focus": {
+      "outline": "none !important"
+    },
+    ".quick-input-list .monaco-scrollable-element": {
+      "padding": "0 !important"
+    },
+    ".quick-input-progress.done": {
+      "display": "none !important"
+    },
+    ".quick-input-list .monaco-highlighted-label": {
+      "color": "rgba(255,255,255,.9) !important"
+    },
+    ".quick-input-list .quick-input-list-entry": {
+      "background": "none !important",
+      "padding": "0 8px !important",
+      "height": "40px !important",
+      "line-height": "40px !important",
+      "font-size": "13px !important",
+      "color": "var(--vscode-quickInput-foreground) !important"
+    },
+    ".quick-input-list": {
+      "padding": "8px !important",
+      "background": "hsl(240deg 1.33% 14.71% / .7) !important",
+      "backdrop-filter": "blur(10px) !important"
+    },
+    ".quick-input-list .monaco-list-rows": {
+      "top": "0 !important",
+      "background": "none !important"
+    },
+    ".quick-input-widget.hidden-input .quick-input-list": {
+      "margin-top": "0"
+    },
+    ".quick-input-list .monaco-list-row": {
+      "top": "0 !important",
+      "height": "40px !important",
+      "position": "relative !important"
+    },
+    ".quick-input-list .monaco-list-row.focused": {
+      "background": "rgba(255,255,255,.1) !important"
+    },
+    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label": {
+      "align-items": "center !important"
+    }
   },
   "workbench.activityBar.location": "bottom",
   "vscode_custom_css.imports": [
