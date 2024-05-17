@@ -162,7 +162,6 @@
   "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
   "prettier.tslintIntegration": false, // 不让prettier使用tslint的代码格式进行校验
 
-  
   "oxc-client.enable": true,
   "window.zoomLevel": 0.4,
   "oxc_language_server.enable": false,
@@ -170,12 +169,9 @@
   "editor.guides.bracketPairs": true,
   "livePreview.customExternalBrowser": "Chrome",
   "symbols.hidesExplorerArrows": false,
-  "editor.unicodeHighlight.allowedLocales": {
-    "zh-hans": true,
-    "ja": true
-  },
+
   "git.autofetch": true,
-  "workbench.colorTheme": "CodeSandbox",
+  "workbench.colorTheme": "Flexoki Dark",
   "workbench.statusBar.visible": false,
   //githubs上的配置
   "apc.font.family": "Inter",
@@ -186,106 +182,17 @@
     "height": 28
   },
   "apc.stylesheet": {
-    ".title-label > h2": "display: none",
+    ".title-label > h2": "display: none !important",
     // ".title-actions": "display: none",
+    ".monaco-list-row": "border-radius: 3px", //选择文件背景圆角
     ".monaco-workbench .part.sidebar .title-actions .actions-container": "justify-content: start",
-    ".sidebar>.title": "border-bottom: 1px solid #192A2C !important",
+    ".sidebar>.title": "border-bottom: 1px solid rgba(255, 255, 255, 0.13)!important",
     ".editor-actions": "display: none", //左右分栏
     // ".composite-bar-container": "border-top: 1px solid #192A2C",
     ".pane-body": "padding: 8px",
     ".monaco-workbench .codicon[class*=codicon-]": "font-size: 16px",
-    ".codicon": "font-size: 16px", //sidebar icon size
-    ".quick-input-widget": {
-      "top": "140px !important",
-      "overflow": "hidden !important",
-      "padding": "1px",
-      "border": "1px solid rgba(255,255,255,.2) !important",
-      "box-shadow": "0 0 0 1px rgba(0,0,0,1) !important",
-      "backdrop-filter": "blur(10px) !important",
-      "background": "rgba(0,0,0,.3) !important",
-      "border-radius": "8px !important"
-    },
-    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label .monaco-icon-label-container>.monaco-icon-name-container": {
-      "display": "inline-flex"
-    },
-    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label::before": {
-      "border": "1px solid rgba(255,255,255,.15)",
-      "background-color": "rgba(0,0,0,.2)",
-      "background-size": "70%",
-      "border-radius": "3px",
-      "margin-right": "8px",
-      "padding": "0",
-      "width": "24px",
-      "display": "flex",
-      "background-position": "center"
-    },
-    ".quick-input-header .monaco-inputbox": {
-      "background": "none !important",
-      "border": "none !important"
-    },
-    ".quick-input-header": {
-      "padding": "0 !important",
-      "background": "none !important",
-      "border-bottom": "1px solid rgba(255,255,255,.2) !important",
-      "backdrop-filter": "blur(10px) !important",
-      "border-radius": "8px 8px 0 0 !important"
-    },
-    ".quick-input-and-message .input": {
-      "background": "hsl(240deg 1.33% 14.71% / .5) !important",
-      "backdrop-filter": "blur(8px) !important",
-      "border": "none !important",
-      "border-radius": "8px 8px 0 0 !important",
-      "padding": "0 12px !important",
-      "height": "40px !important",
-      "font-size": "14px !important",
-      "color": "var(--vscode-quickInput-foreground) !important"
-    },
-    ".quick-input-header input:focus": {
-      "outline": "none !important"
-    },
-    ".quick-input-header .synthetic-focus": {
-      "outline": "none !important"
-    },
-    ".quick-input-list .monaco-scrollable-element": {
-      "padding": "0 !important"
-    },
-    ".quick-input-progress.done": {
-      "display": "none !important"
-    },
-    ".quick-input-list .monaco-highlighted-label": {
-      "color": "rgba(255,255,255,.9) !important"
-    },
-    ".quick-input-list .quick-input-list-entry": {
-      "background": "none !important",
-      "padding": "0 8px !important",
-      "height": "40px !important",
-      "line-height": "40px !important",
-      "font-size": "13px !important",
-      "color": "var(--vscode-quickInput-foreground) !important"
-    },
-    ".quick-input-list": {
-      "padding": "8px !important",
-      "background": "hsl(240deg 1.33% 14.71% / .7) !important",
-      "backdrop-filter": "blur(10px) !important"
-    },
-    ".quick-input-list .monaco-list-rows": {
-      "top": "0 !important",
-      "background": "none !important"
-    },
-    ".quick-input-widget.hidden-input .quick-input-list": {
-      "margin-top": "0"
-    },
-    ".quick-input-list .monaco-list-row": {
-      "top": "0 !important",
-      "height": "40px !important",
-      "position": "relative !important"
-    },
-    ".quick-input-list .monaco-list-row.focused": {
-      "background": "rgba(255,255,255,.1) !important"
-    },
-    ".quick-input-list .quick-input-list-rows>.quick-input-list-row .monaco-icon-label": {
-      "align-items": "center !important"
-    }
+    ".monaco-workbench .pane-composite-part>.footer": "border-top: 1px solid rgba(255, 255, 255, 0.13) !important",
+    ".codicon": "font-size: 16px" //sidebar icon size
   },
   "workbench.activityBar.location": "bottom",
   "vscode_custom_css.imports": [
